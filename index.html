@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="all-container">
+    <div class="left-container">
+        <h2 class="left-title">COMPLETED<br>PROJECTS</h2>
+        <div class="left-description">
+            <p>Only a small part of the work performed by our company is presented on the site. 
+                For 14 years on in the construction market we have made happy more than 1000 families
+            </p>
+        </div>
+        <div class="left-info">
+            <div class="info-block">
+                <h3 class="info-title">CITY:</h3>
+                <p>Rostov-on-Don<br>LCD admiral</p>
+            </div>
+            <div class="info-block">
+                <h3 class="info-title">APARTMENT AREA:</h3>
+                <p>81 m2</p>
+            </div>
+            <div class="info-block">
+                <h3 class="info-title">REPAIR TIME:</h3>
+                <p>3.5 months</p>
+            </div>
+            <div class="info-block">
+                <h3 class="info-title">REPAIR COST:</h3>
+                <p>Upon request</p>
+            </div>
+        </div>
+       <!-- Стрелки -->
+       <div class="slider-controls">
+        <button id="prev"><svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.276L2.29917e-05 6.638L6.63807 -3.82298e-05L7.58563 0.94753L1.89516 6.638L7.58563 12.3285L6.63807 13.276Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.9681L41.4556 5.9681L41.4556 7.30817L0.947578 7.30816L0.947579 5.9681Z" fill="white"/>
+            </svg>
+            </button>
+        <div class="dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        <button id="next"><svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 -0.000183105L41.6831 6.63786L35.0451 13.2759L34.0975 12.3283L39.788 6.63786L34.0975 0.947384L35.0451 -0.000183105Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7355 7.30776L0.227539 7.30776L0.227539 5.9677L40.7355 5.9677L40.7355 7.30776Z" fill="white"/>
+            </svg>
+            </button>
+    </div>
+    </div>
+    <div class="right-container">
+        <section id="slider">
+            <!-- Навигация по ссылкам -->
+            <div class="slider-nav">
+                <a href="#" class="slider-link" data-slide="0">ROSTOV-ON-DON, ADMIRAL</a>
+                <a href="#" class="slider-link" data-slide="1">SOCHI THIEVES</a>
+                <a href="#" class="slider-link" data-slide="2">ROSTOV-ON-DON PATRIOTIC</a>
+            </div>
+
+            <!-- Контент слайдера -->
+            <div class="slider-wrapper">
+                <div class="slider-content">
+                    <!-- Слайд 1 -->
+                    <div class="slide">
+                        <img src="/img/1.png" alt="Slide 1" />
+                    </div>
+                    <!-- Слайд 2 -->
+                    <div class="slide">
+                        <img src="/img/2.png" alt="Slide 2" />
+                    </div>
+                    <!-- Слайд 3 -->
+                    <div class="slide">
+                        <img src="/img/3.png" alt="Slide 3" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+    <script src="/script/script.js"></script>
+</body>
+
+</html>
