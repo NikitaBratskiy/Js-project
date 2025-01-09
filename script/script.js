@@ -16,26 +16,34 @@ function goToSlide(slideIndex) {
 
 // Обновление активных точек и ссылок
 function updateActive() {
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentSlide);
-    });
+    // Проверка на наличие точек и ссылок перед манипуляцией с ними
+    if (dots.length > 0) {
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
 
-    links.forEach((link, index) => {
-        link.style.color = index === currentSlide ? '#E3B873' : '#FFFFFF4D';
-    });
-    links.forEach((link, index) => {
-        link.classList.toggle('active', index === currentSlide); // Добавляем класс active
-    });
+    if (links.length > 0) {
+        links.forEach((link, index) => {
+            // Обновляем стиль и добавляем/удаляем активный класс
+            link.style.color = index === currentSlide ? '#E3B873' : '#FFFFFF4D';
+            link.classList.toggle('active', index === currentSlide);
+        });
+    }
 }
 
 // Обработчики событий
-prevButton.addEventListener('click', () => {
-    goToSlide(currentSlide - 1);
-});
+if (prevButton) {
+    prevButton.addEventListener('click', () => {
+        goToSlide(currentSlide - 1);
+    });
+}
 
-nextButton.addEventListener('click', () => {
-    goToSlide(currentSlide + 1);
-});
+if (nextButton) {
+    nextButton.addEventListener('click', () => {
+        goToSlide(currentSlide + 1);
+    });
+}
 
 dots.forEach((dot) => {
     dot.addEventListener('click', (e) => {
