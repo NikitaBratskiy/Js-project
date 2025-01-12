@@ -1,7 +1,7 @@
 const slidesData = [
-    { imgSrc: "/img/1.png", alt: "Slide 1", title: "ROSTOV-ON-DON, ADMIRAL" },
-    { imgSrc: "/img/2.png", alt: "Slide 2", title: "SOCHI THIEVES" },
-    { imgSrc: "/img/3.png", alt: "Slide 3", title: "ROSTOV-ON-DON PATRIOTIC" }
+    { imgSrc: "./img/1.png", alt: "Slide 1", title: "ROSTOV-ON-DON, ADMIRAL" },
+    { imgSrc: "./img/2.png", alt: "Slide 2", title: "SOCHI THIEVES" },
+    { imgSrc: "./img/3.png", alt: "Slide 3", title: "ROSTOV-ON-DON PATRIOTIC" }
 ];
 
 const sliderContent = document.querySelector('.slider-content');
